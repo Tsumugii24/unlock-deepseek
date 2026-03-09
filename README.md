@@ -1,159 +1,105 @@
-# Unlock-DeepSeek
-
-<p align="center"> <img src="https://avatars.githubusercontent.com/u/46047812?s=200&v=4" style="width: 40%;" id="title-icon">  </p>
-<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-<!-- <a href="" target="_blank" style="margin-left: 6px">🤗</a> <a href="https://modelscope.cn/models/linjh1118/WidsoMenter-8B/summary" target="_blank" style="margin-left: 6px">HuggingFace</a>  • | 
-<a href="" target="_blank" style="margin-left: 10px">🤖</a> <a href="https://modelscope.cn/models/linjh1118/WidsoMenter-8B/summary" target="_blank" style="margin-left: 6px">ModelScope</a>  • |
-<a href="" target="_blank" style="margin-left: 10px">📃</a> <a href="./resources/WisdoMentor_tech_report.pdf" target="_blank" style="margin-left: 6px">[Wisdom-8B @ arxiv]</a>
-
-</p>
-
-<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-🍭 <a href="http://wisdomentor.jludreamworks.com" target="_blank"  style="margin-left: 6px">WisdoMentor在线体验</a> • |
-<a href="" target="_blank" style="margin-left: 10px">💬</a> <a href="./resources/wechat.md" target="_blank"  style="margin-left: 6px">WeChat</a> 
-</p> -->
-
-<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-<a href="https://github.com/datawhalechina/unlock-deepseek/blob/main/README_en.md" target="_blank"  style="margin-left: 6px">English Readme</a>  • |
-<a href="https://github.com/datawhalechina/unlock-deepseek/blob/main/README.md" target="_blank"  style="margin-left: 6px">中文 Readme</a> 
-</p>
-
-面向广泛 AI 研究爱好者群体的 DeepSeek 系列工作解读、扩展和复现，致力于传播 DeepSeek 在 AGI 实践之路上的创新性成果，并提供从 0 代码实现，打造 LLM 前沿技术教学项目。
-
-### 项目受众
-
-- 有大语言模型相关概念基础，具有大学数理能力的初学者
-- 希望进一步了解深度推理的学习者
-- 希望将推理模型运用到实际工作中的从业人员
-
-### 项目亮点
-
-我们将 DeepSeek-R1 及其系列工作拆分为三个重要部分：
-
-- **MoE**
-- **Reasoning**
-- **Infra**
-
-与大众的关注性价比优势不同，我们关注 DeepSeek 在实践 AGI 之路的创新性工作，致力于将 DeepSeek 现有公开工作细分拆解，向更广泛的 AI 研究爱好者讲述清楚其中的创新方法细节，同时我们会对比介绍同期其他类似工作（如 Kimi-K1.5），呈现 AGI 之路的不同可能性
-
-我们也将结合其他社区的工作，探索 DeepSeek-R1 的复现方案，提供中文复现教程
-
-## 目录
-
-### §1 MoE: DeepSeek 所坚持的架构
-
-- [x]  	&emsp;1.1 MoE 简介 @姜舒凡
-
-- [ ]  	&emsp;1.2 MoE 结构的代码实现
-
-- [x]  	&emsp;1.3 DeepSeek MoE @姜舒凡
-
-### 	§2 Reasoning: DeepSeek-R1 的核心能力
-
-#### 	&emsp;2.1 推理模型介绍
-
-- [ ] 	&emsp;&emsp;2.1.1 LLM and Reasoning
-
-- [ ] 	&emsp;&emsp;2.1.2 推理效果可视化
-
-- [ ] 	&emsp;&emsp;2.1.3 OpenAI-o1与Inference Scaling Law
-
-- [ ] 	&emsp;&emsp;2.1.4 Qwen-QwQ and Qwen-QVQ
-
-- [ ] 	&emsp;&emsp;2.1.5 DeepSeek-R1 and DeepSeek-R1-Zero
-
-- [ ] 	&emsp;&emsp;2.1.6 Kimi-K1.5
-
-#### 	&emsp;2.2 推理模型关键算法原理
-
-- [ ] 	&emsp;&emsp;2.2.1 CoT，ToT，GoT
-
-- [x] 	&emsp;&emsp;2.2.2 蒙特卡洛树搜索 @姜舒凡
-
-- [ ] 	&emsp;&emsp;2.2.3 强化学习概念速览
-
-- [ ] 	&emsp;&emsp;2.2.4 DPO
-
-- [ ] 	&emsp;&emsp;2.2.5 PPO
-
-- [ ] 	&emsp;&emsp;2.2.6 GRPO
-
-### §3 Infra: DeepSeek 训练高效且便宜的关键
-
-- [ ]  	&emsp;3.1 FlashMLA
-
-- [ ]  	&emsp;3.2 DeepEP
-
-- [ ]  	&emsp;3.3 DeepGEMM
-
-- [ ]  	&emsp;3.4 DualPipe & EPLB
-
-- [ ]  	&emsp;3.5 3FS
+ <div align='center'>
+    <img src="assets/logo.png" alt="logo" width="800"/>
+  <h1>Unlock DeepSeek</h1>
+  <h3>DeepSeek系列论文解读和动手复现</h3>
+  <p><em>面向广泛 AI 研究者群体的 DeepSeek 系列工作解读、扩展和复现。致力于传播 DeepSeek 在 AGI 实践之路上的前沿创新性成果。</em></p>
+  <img src="https://img.shields.io/github/stars/datawhalechina/unlock-deepseek?style=flat&logo=github" alt="GitHub stars"/>
+  <a rel="License" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="License" style="border-width:0" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey" /></a>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg" alt="Python"/>
+  <a href="https://datawhalechina.github.io/unlock-deepseek/"><img src="https://img.shields.io/badge/在线阅读-Online%20Reading-green?style=flat&logo=gitbook" alt="Online Reading"></a>
+     <h4 align="center">
+        <b>简体中文</b> | <a href="https://github.com/datawhalechina/unlock-deepseek/blob/main/README_en.md">English</a>
+	</h4>
+</div>
 
 
 
-### §reproduction: 对于重要工作的代码复现
-- [x]  	&emsp;Datawhale-R1
 
-- [ ] 
+---
 
 
 
-## 核心贡献者
+## 📖 项目简介
+
+**Unlock DeepSeek** 是一个面向广大 AI 研究者和学习者的开源学习项目，致力于对 DeepSeek 系列论文进行**系统性解读**与**动手复现**。项目涵盖 DeepSeek 在通用大语言模型、数学推理、代码生成、多模态、推理模型（如 DeepSeek-R1）以及 MoE 架构、训练基础设施等方向的创新成果，旨在将 DeepSeek 在 AGI 实践之路上的前沿技术拆解为可理解、可复现的学习内容。
+
+**核心特色：**
+- **论文精读**：从 DeepSeek-LLM 到 DeepSeek-V3.2、DeepSeek-Math、DeepSeek-Coder、DeepSeek-VL 等全系列技术报告的系统解读
+- **动手实践**：提供从零开始的复现教程与代码，支持中文社区本地化复现（如 DeepSeek-R1 等）
+- **技术拆解**：聚焦 MoE 架构、推理模型（CoT/MCTS/GRPO 等）、数据与 Infra 等关键要素
+- **横向对比**：引入 Kimi, GLM，MiniMax 等同类工作，呈现 AGI 路径上的不同技术路线
+
+**目标读者**：具备大语言模型基础知识和大学数学水平的初学者、希望深入理解深度推理的学习者，以及希望将推理模型应用于实际工作的从业者。
+
+**项目当前处于⚠️ Alpha内测版本，尚不完整且可能存在错误。**
+
+
+## 📚 结构预览
+
+<div align="center">
+
+| 章节                                                    | 摘要                         | 状态 |
+| ------------------------------------------------------- | ---------------------------- | ---- |
+| [引言]()          | 项目概述以及学习建议         | ✅    |
+| **通用大语言模型**      |          |     |
+| [DeepSeek-LLM]()                  | Scaling Open-Source Language Models with Longtermism     | 🚧    |
+| [DeepSeekMoE]()          | Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models   | 🚧    |
+| [DeepSeek-V2]()      | A Strong, Economical, and Efficient Mixture-of-Experts Language Model        | 🚧    |
+| [DeepSeek-V3]()            | DeepSeek-V3 Technical Report | 🚧    |
+| [DeepSeek-V3.2]()          | Pushing the Frontier of Open Large Language Models       | 🚧    |
+| [DeepSeek-V3.2-Exp]()          | Boosting Long-Context Efficiency with DeepSeek Sparse Attention       | 🚧    |
+| **数学**      |          |     |
+| [DeepSeek-Math]()             | Pushing the Limits of Mathematical Reasoning in Open Language Models   | 🚧    |
+| [DeepSeek-Math-V2]()             | Towards Self-Verifiable Mathematical Reasoning   | 🚧    |
+| [DeepSeek-Prover]()                | Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data       | 🚧    |
+| [DeepSeek-Prover-V1.5]()                | Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search       | 🚧    |
+| [DeepSeek-Prover-V2]()                | Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition       | 🚧    |
+| **代码**      |          |     |
+| [DeepSeek-Coder]()        | Let the Code Write Itself       | 🚧    |
+| [DeepSeek-Coder-V2]()       | Breaking the Barrier of Closed-Source Models in Code Intelligence   | 🚧    |
+| **多模态**      |          |     |
+| [DeepSeek-OCR]() | Contexts Optical Compression       | 🚧    |
+| [DeepSeek-OCR-2]() | Visual Causal Flow       | 🚧    |
+| [DeepSeek-VL]() | Towards Real-World Vision-Language Understanding       | 🚧    |
+| [DeepSeek-VL2]() | Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding       | 🚧    |
+| [Janus]() | Decoupling visual encoding for unified multimodal understanding and generation       | 🚧    |
+| [JanusFlow]() | Harmonizing Autoregression and Rectified Flow for Unified Multimodal Understanding and Generation       | 🚧    |
+| [Janus-Pro]() | Unified Multimodal Understanding and Generation with Data and Model Scaling       | 🚧    |
+| **推理模型/强化学习**      |          |     |
+| [DeepSeek-R1](./DeepSeek-R1/) | Incentivizing Reasoning Capability in LLMs via Reinforcement Learning       | ✅   |
+| **模型架构与训练方法**      |          |     |
+| [Engram]() | Conditional Memory via Scalable Lookup       | 🚧    |
+| [FlashMLA]() | Efficient Multi-head Latent Attention Kernels       | 🚧    |
+| [LPLB]() | Linear-Programming-Based Load Balancer       | 🚧    |
+| [ESFT]() | Expert-Specialized Fine-Tuning for Sparse Architectural Large Language Models       | 🚧    |
+| **INFRA**      |          |     |
+| [DualPipe]() |        | 🚧    |
+| [3FS]() |        | 🚧    |
+| [DeepEP]() |        | 🚧    |
+| [DeepGEMM]() |        | 🚧    |
+| **附录**      |          |     |
+| [附录内容]() |        | ✅    |
+
+</div>
+
+## 🤝 项目成员
+
+感谢以下项目的核心贡献者，排名不分先后
 
 - [骆秀韬 - 项目负责人](https://github.com/anine09) （似然实验室）
-- [姜舒凡 - 项目负责人](https://github.com/Tsumugii24) （华东理工大学）
+- [姜舒凡 - 项目负责人](https://github.com/Tsumugii24) （Datawhale 成员）
 - [邓恺俊](https://github.com/kedreamix) （深圳大学）
 - [陈嘉诺](https://github.com/Tangent-90C) （广州大学）
 - [林景豪](https://github.com/linjh1118)  （智谱）
 
 
 
-## 参与贡献
+## 🙏 致谢
 
-- 如果你发现了一些问题，可以提Issue进行反馈
-- 如果你想参与贡献本项目，欢迎提Pull request，请遵循fork-pr规范
-
-## 提交规范
-- feat: 用于新功能（例如，feat: 添加新的 AI 模型）
-- fix: 用于错误修复（例如，fix: 解决内存泄漏问题）
-- docs: 用于文档更新（例如，docs: 更新贡献指南）
-- style: 用于代码风格变更（例如，style: 重构代码格式）
-- refactor: 用于代码重构（例如，refactor: 优化数据处理）
-- test: 用于添加或更新测试（例如，test: 为新功能添加单元测试）
-- chore: 用于维护任务（例如，chore: 更新依赖项）
-
-
-## 致谢
-我们衷心感谢以下开源工作，使我们能够构建这个项目：
-
-[DeepSeek](https://github.com/deepseek-ai/DeepSeek-R1)
-
-[Open-R1](https://github.com/huggingface/open-r1)
-
-[trl](https://github.com/huggingface/trl)
-
-[mini-deepseek-r1](https://www.philschmid.de/mini-deepseek-r1)
-
-[TinyZero](https://github.com/Jiayi-Pan/TinyZero)
-
-[flash-attn](https://github.com/Dao-AILab/flash-attention)
-
-[modelscope](https://github.com/modelscope/modelscope)
-
-[vllm](https://github.com/vllm-project/vllm)
+本项目受益于 [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1), [Open-R1](https://github.com/huggingface/open-r1), [transformers](https://github.com/huggingface/transformers), [pytorch](https://github.com/pytorch/pytorch), [flash-attn](https://github.com/Dao-AILab/flash-attention), [trl](https://github.com/huggingface/trl), [mini-deepseek-r1](https://www.philschmid.de/mini-deepseek-r1), [TinyZero](https://github.com/Jiayi-Pan/TinyZero), [modelscope](https://github.com/modelscope/modelscope), [vllm](https://github.com/vllm-project/vllm) 感谢以上开源项目的杰出工作！
 
 
 
-## 关注我们
+## 📜 开源协议
 
-<div align=center>
-<p>扫描下方二维码关注公众号：Datawhale</p>
-<img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/qrcode.jpeg" width = "180" height = "180">
-</div>
-
-## LICENSE
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
-
-*注：默认使用CC 4.0协议，也可根据自身项目情况选用其他协议*
+项目采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
