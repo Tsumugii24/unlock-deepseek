@@ -69,6 +69,7 @@
 | [DeepSeek-R1](./DeepSeek-R1/) | Incentivizing Reasoning Capability in LLMs via Reinforcement Learning | ✅ |
 | **Model Architecture & Training Methods** | | |
 | [Engram]() | Conditional Memory via Scalable Lookup | 🚧 |
+| [mHC]() | Manifold-Constrained Hyper-Connections       | 🚧    |
 | [FlashMLA]() | Efficient Multi-head Latent Attention Kernels | 🚧 |
 | [LPLB]() | Linear-Programming-Based Load Balancer | 🚧 |
 | [ESFT]() | Expert-Specialized Fine-Tuning for Sparse Architectural Large Language Models | 🚧 |
