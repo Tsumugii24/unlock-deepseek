@@ -26,8 +26,8 @@
 **Core Features:**
 - **Paper Deep Dive**: Systematic interpretation of the full series of technical reports from DeepSeek-LLM to DeepSeek-V3.2, DeepSeek-Math, DeepSeek-Coder, DeepSeek-VL, and more
 - **Hands-on Practice**: Step-by-step reproduction tutorials and code from scratch, with localized reproduction support for the Chinese community (e.g., DeepSeek-R1)
-- **Technical Breakdown**: Focus on MoE architecture, reasoning models (CoT/MCTS/GRPO, etc.), data, and Infra as key elements
-- **Comparative Analysis**: Introduction of related works such as Kimi, GLM，MiniMax to present different technical approaches on the path to AGI
+- **Technical Breakdown**: Focus on MoE architecture, model reasoning and reinforcement learning, data, and Infra as key elements
+- **Comparative Analysis**: Introduction of related works such as Kimi, GLM, MiniMax for comparison, presenting different technical approaches on the path to AGI
 
 **Target Audience**: Beginners with foundational knowledge in large language models and university-level mathematical skills, learners interested in understanding deep reasoning, and professionals looking to apply reasoning models in their work.
 
